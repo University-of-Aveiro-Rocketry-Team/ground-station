@@ -1,0 +1,22 @@
+menu "WiFi Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        # default "NothingPhone1"
+        default "MEO-92D410"
+        help
+            SSID (network name) for the device to connect to.
+
+    config WIFI_PASS
+        string "WiFi Password"
+        # default "open.LAB"
+        default "123456789"
+        help
+            WiFi password for the network that the device will to use.
+
+    config SERVER_IP_ADDR
+        string "Server IP address"
+        default "148.71.2.237"
+        help
+            IP address of the server to connect to and send the sensor data.
+endmenu
